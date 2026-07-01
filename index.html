@@ -1542,31 +1542,45 @@
         }
 
         function handleContactFormSubmit(event) {
-            event.preventDefault();
+    event.preventDefault();
 
-            const name = document.getElementById('contact-name').value.trim();
-            const phone = document.getElementById('contact-phone').value.trim();
-            const email = document.getElementById('contact-email').value.trim();
-            const msg = document.getElementById('contact-msg').value.trim();
+    // Get form values
+    const name = document.getElementById('contact-name').value.trim();
+    const phone = document.getElementById('contact-phone').value.trim();
+    const email = document.getElementById('contact-email').value.trim();
+    const msg = document.getElementById('contact-msg').value.trim();
 
-            let composeMsg = `Hello Business India,\n\n`;
-            composeMsg += `Name: ${name}\n`;
-            composeMsg += `Phone: ${phone}\n`;
-            if (email) composeMsg += `Email: ${email}\n`;
-            composeMsg += `Inquiry: ${msg}\n`;
+    // Create WhatsApp message
+    let composeMsg = `Hello Business India,\n\n`;
+    composeMsg += `Name: ${name}\n`;
+    composeMsg += `Phone: ${phone}\n`;
 
-            const encodedCompose = encodeURIComponent(composeMsg);
-            const whatsappSubmitUrl = `https://wa.me/919415448909?text=${encodedCompose}`;
+    if (email !== "") {
+        composeMsg += `Email: ${email}\n`;
+    }
 
-            const successBox = document.getElementById('contact-success-notification');
-            successBox.classList.remove('hidden');
+    composeMsg += `Inquiry: ${msg}\n\n`;
+    composeMsg += `Please contact me regarding this inquiry. Thank you!`;
 
-            setTimeout(() => {
-                successBox.classList.add('hidden');
-                document.getElementById('quick-contact-form').reset();
-                window.open(whatsappSubmitUrl, '_blank');
-            }, 3000);
-        }
+    // Encode message for WhatsApp
+    const encodedCompose = encodeURIComponent(composeMsg);
+
+    // Your WhatsApp number
+    const whatsappSubmitUrl = `https://wa.me/919415448909?text=${encodedCompose}`;
+
+    // Show success notification
+    const successBox = document.getElementById('contact-success-notification');
+    successBox.classList.remove('hidden');
+
+    // Open WhatsApp after 3 seconds
+    setTimeout(() => {
+        successBox.classList.add('hidden');
+        document.getElementById('quick-contact-form').reset();
+
+        // Opens WhatsApp Web on PC and WhatsApp App on Mobile
+        window.open(whatsappSubmitUrl, '_blank');
+    }, 3000);
+}
     </script>
 </body>
 </html>
