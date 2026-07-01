@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business India - Varanasi | General Order Supplier & Services</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            light: '#1e3a8a', // Royal Blue
+                            dark: '#3b82f6'
+                        },
+                        secondary: {
+                            light: '#f59e0b', // Amber
+                            dark: '#fbbf24'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts for premium typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Devanagari:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS for Custom Translations, Smooth Theme Transitions & Animations -->
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        /* Language toggling engine */
+        body.lang-en .lang-hi-el { display: none !important; }
+        body.lang-hi .lang-en-el { display: none !important; }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        .dark ::-webkit-scrollbar-track {
+            background: #1f2937;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        .dark ::-webkit-scrollbar-thumb {
+            background: #4b5563;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+
+        /* Highlight animation for clicked grid elements */
+        @keyframes pulseHighlight {
+            0%, 100% { transform: scale(1); box-shadow: 0 0 0 0px rgba(59, 130, 246, 0.7); }
+            50% { transform: scale(1.03); box-shadow: 0 0 20px 8px rgba(59, 130, 246, 0.5); }
+        }
+        .highlight-card {
+            animation: pulseHighlight 1.5s ease-in-out 2;
+        }
+
+        /* Hero Slide Text Fade-in-up animation */
+        @keyframes fadeUpIn {
+            0% { opacity: 0; transform: translateY(15px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-up {
+            animation: fadeUpIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        /* Micro Floating Animation for visual graphics */
+        @keyframes floatingEffect {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+        }
+        .animate-float {
+            animation: floatingEffect 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="lang-hi bg-slate-50 text-slate-800 dark:bg-gray-950 dark:text-gray-100 min-h-screen flex flex-col antialiased">
+
+    <!-- HEADER & NAVIGATION -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-white/90 dark:bg-gray-900/90 border-b border-slate-200 dark:border-gray-800 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Logo & Brand Name -->
+            <div class="flex items-center space-x-3 cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                <div class="bg-blue-600 dark:bg-blue-500 p-2.5 rounded-xl shadow-lg shadow-blue-500/20 text-white transform hover:rotate-6 transition-transform">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="text-xl sm:text-2xl font-extrabold tracking-tight bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent">
+                        Business India
+                    </h1>
+                    <p class="text-xs text-slate-500 dark:text-gray-400 font-medium">
+                        <span class="lang-en-el">Government & General Order Supplier</span>
+                        <span class="lang-hi-el">गवर्नमेंट एवं जनरल ऑर्डर सप्लायर</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center space-x-8 text-sm font-semibold text-slate-600 dark:text-gray-300">
+                <a href="#" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                    <span class="lang-en-el">Home</span><span class="lang-hi-el">मुख्य पृष्ठ</span>
+                </a>
+                <a href="#services" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                    <span class="lang-en-el">Services</span><span class="lang-hi-el">हमारी सेवाएं</span>
+                </a>
+                <a href="#quote-builder" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                    <span class="lang-en-el">Order Builder</span><span class="lang-hi-el">पर्ची जनरेटर</span>
+                </a>
+                <a href="#faqs" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                    <span class="lang-en-el">FAQs</span><span class="lang-hi-el">सामान्य प्रश्न</span>
+                </a>
+                <a href="#contact" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                    <span class="lang-en-el">Contact</span><span class="lang-hi-el">संपर्क करें</span>
+                </a>
+            </nav>
+
+            <!-- Right Controls: Lang, Theme & CTA -->
+            <div class="flex items-center space-x-2 sm:space-x-4">
+                
+                <!-- Language Toggle Button -->
+                <button onclick="toggleLanguage()" class="flex items-center space-x-1.5 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-gray-700 hover:bg-slate-100 dark:hover:bg-gray-800 transition text-sm font-semibold">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 11.37 7.31 16.5 3 19" />
+                    </svg>
+                    <span class="lang-en-el text-xs sm:text-sm">हिन्दी</span>
+                    <span class="lang-hi-el text-xs sm:text-sm">English</span>
+                </button>
+
+                <!-- Dark Mode Toggle Button -->
+                <button onclick="toggleTheme()" class="p-2.5 rounded-lg border border-slate-200 dark:border-gray-700 hover:bg-slate-100 dark:hover:bg-gray-800 transition text-slate-600 dark:text-gray-300">
+                    <!-- Sun Icon -->
+                    <svg id="theme-sun" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+                    </svg>
+                    <!-- Moon Icon -->
+                    <svg id="theme-moon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button onclick="toggleMobileMenu()" class="p-2.5 rounded-lg border border-slate-200 lg:hidden dark:border-gray-700 hover:bg-slate-100 dark:hover:bg-gray-800 transition text-slate-600 dark:text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+
+                <!-- Contact CTA (Desktop) -->
+                <a href="#contact" class="hidden md:inline-flex items-center justify-center px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-semibold shadow-md transition transform active:scale-95 text-sm">
+                    <span class="lang-en-el">Get Quote</span>
+                    <span class="lang-hi-el">संपर्क करें</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Panel -->
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 dark:border-gray-800 bg-white dark:bg-gray-900 transition-all">
+            <div class="px-4 pt-2 pb-6 space-y-3 flex flex-col text-sm font-semibold">
+                <a href="#" onclick="toggleMobileMenu()" class="block py-2 text-slate-600 dark:text-gray-300 hover:text-blue-600">
+                    <span class="lang-en-el">Home</span><span class="lang-hi-el">मुख्य पृष्ठ</span>
+                </a>
+                <a href="#services" onclick="toggleMobileMenu()" class="block py-2 text-slate-600 dark:text-gray-300 hover:text-blue-600">
+                    <span class="lang-en-el">Services</span><span class="lang-hi-el">हमारी सेवाएं</span>
+                </a>
+                <a href="#quote-builder" onclick="toggleMobileMenu()" class="block py-2 text-slate-600 dark:text-gray-300 hover:text-blue-600">
+                    <span class="lang-en-el">Order Builder</span><span class="lang-hi-el">पर्ची जनरेटर</span>
+                </a>
+                <a href="#faqs" onclick="toggleMobileMenu()" class="block py-2 text-slate-600 dark:text-gray-300 hover:text-blue-600">
+                    <span class="lang-en-el">FAQs</span><span class="lang-hi-el">सामान्य प्रश्न</span>
+                </a>
+                <a href="#contact" onclick="toggleMobileMenu()" class="block py-2 text-slate-600 dark:text-gray-300 hover:text-blue-600">
+                    <span class="lang-en-el">Contact</span><span class="lang-hi-el">संपर्क करें</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative overflow-hidden py-12 lg:py-20 bg-gradient-to-b from-blue-50 via-white to-slate-50 dark:from-gray-900 dark:via-gray-950 dark:to-gray-900 transition-colors duration-300">
+        <!-- Floating decorative gradients -->
+        <div class="absolute top-1/4 -left-32 w-96 h-96 bg-blue-400/20 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-1/4 -right-32 w-96 h-96 bg-indigo-400/20 rounded-full blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <!-- Dynamic Slide Show Banner Header (Top Showcase) with optimized 5s Transition and Random selection -->
+            <div class="mb-12 relative w-full h-56 sm:h-72 md:h-96 rounded-3xl overflow-hidden shadow-xl border border-slate-200/50 dark:border-gray-800">
+                <div id="slideshow-container" class="relative w-full h-full bg-slate-900">
+                    <!-- Dynamic slideshow items with randomized sequence are rendered via JavaScript -->
+                </div>
+            </div>
+
+            <!-- Main Split Layout -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 bg-blue-100/80 dark:bg-blue-900/40 text-blue-800 dark:text-blue-300 px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide animate-float">
+                        <span class="inline-block w-2.5 h-2.5 bg-green-500 rounded-full animate-ping"></span>
+                        <span class="lang-en-el">Trusted Partner in Varanasi</span>
+                        <span class="lang-hi-el">वाराणसी का विश्वसनीय प्रतिष्ठान</span>
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        <span class="lang-en-el">All-in-One <span class="text-blue-600 dark:text-blue-400">Order & Supply</span> Solutions</span>
+                        <span class="lang-hi-el">सभी प्रकार की <span class="text-blue-600 dark:text-blue-400">ऑर्डर एवं सर्विसेज़</span> की विश्वसनीय सप्लाई</span>
+                    </h2>
+
+                    <p class="text-base sm:text-lg text-slate-600 dark:text-gray-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        <span class="lang-en-el">At Business India, we provide complete solutions ranging from high-quality stationery, computers, electrical equipment to civil repairs, painting, and custom furniture fabrication in Varanasi.</span>
+                        <span class="lang-hi-el">हमारे प्रतिष्ठान में प्रिंटिंग, स्टेशनरी, कंप्यूटर, इलेक्ट्रिकल आइटम से लेकर सिविल रिपेयरिंग, रंगाई-पुताई, फर्नीचर निर्माण एवं जनरल ऑर्डर सप्लाई का कार्य समयबद्ध एवं गुणवत्तापूर्ण तरीके से किया जाता है।</span>
+                    </p>
+
+                    <!-- Interactive CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#quote-builder" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-bold text-base shadow-lg shadow-blue-500/20 hover:shadow-xl transition transform hover:-translate-y-0.5 active:translate-y-0">
+                            <span class="lang-en-el">Build Order Inquiry</span>
+                            <span class="lang-hi-el">अपनी आवश्यकता सूची बनाएं</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 rounded-xl border border-slate-300 dark:border-gray-700 hover:bg-slate-100 dark:hover:bg-gray-800 font-semibold text-base transition">
+                            <span class="lang-en-el">Explore Services</span>
+                            <span class="lang-hi-el">हमारी सेवाएं देखें</span>
+                        </a>
+                    </div>
+
+                    <!-- Fast trust indicators -->
+                    <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-200 dark:border-gray-800 max-w-lg mx-auto lg:mx-0">
+                        <div class="text-center lg:text-left">
+                            <p class="text-2xl sm:text-3xl font-extrabold text-blue-600 dark:text-blue-400 animate-pulse">100%</p>
+                            <p class="text-xs text-slate-500 dark:text-gray-400 font-medium">
+                                <span class="lang-en-el">On-Time Delivery</span>
+                                <span class="lang-hi-el">समय पर आपूर्ति</span>
+                            </p>
+                        </div>
+                        <div class="text-center lg:text-left border-l border-slate-200 dark:border-gray-800 pl-4">
+                            <p class="text-2xl sm:text-3xl font-extrabold text-blue-600 dark:text-blue-400">Premium</p>
+                            <p class="text-xs text-slate-500 dark:text-gray-400 font-medium">
+                                <span class="lang-en-el">Quality Products</span>
+                                <span class="lang-hi-el">सर्वोत्तम गुणवत्ता</span>
+                            </p>
+                        </div>
+                        <div class="text-center lg:text-left border-l border-slate-200 dark:border-gray-800 pl-4">
+                            <p class="text-2xl sm:text-3xl font-extrabold text-blue-600 dark:text-blue-400">Fair</p>
+                            <p class="text-xs text-slate-500 dark:text-gray-400 font-medium">
+                                <span class="lang-en-el">Honest Pricing</span>
+                                <span class="lang-hi-el">उचित मूल्य दर</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Visual: Match the design in image_25d21a.png -->
+                <div class="lg:col-span-5 relative mt-8 lg:mt-0">
+                    <div class="relative mx-auto max-w-sm sm:max-w-md bg-[#0b1329] dark:bg-gray-900 border border-slate-800 p-6 sm:p-8 rounded-3xl shadow-2xl transition duration-300 transform hover:scale-[1.01]">
+                        <div class="absolute -top-4 -right-4 bg-yellow-500 text-slate-900 font-bold px-3 py-1 rounded-lg text-xs transform rotate-6 shadow-md z-10 animate-bounce">
+                            <span class="lang-en-el">Best Rates</span>
+                            <span class="lang-hi-el">उचित मूल्य</span>
+                        </div>
+
+                        <!-- One-Stop Supply interactive widget based on image_25d21a.png design -->
+                        <div class="space-y-4">
+                            <h3 class="text-lg font-bold text-white pb-2 border-b border-slate-800 flex items-center justify-between">
+                                <span class="lang-en-el">One-Stop Supply</span>
+                                <span class="lang-hi-el">एक स्थान पर सब उपलब्ध</span>
+                                <span class="text-xs text-blue-400 bg-blue-900/30 px-2 py-0.5 rounded">Varanasi</span>
+                            </h3>
+
+                            <div class="grid grid-cols-2 gap-3 text-xs sm:text-sm">
+                                <div onclick="navigateToServiceAndShow('it-computer')" class="cursor-pointer p-4 rounded-xl bg-slate-900/60 hover:bg-slate-800/80 transition-all border border-slate-800 flex flex-col justify-between group active:scale-95">
+                                    <span class="text-blue-400 font-bold group-hover:text-blue-300 transition-colors">💻 IT & Computer</span>
+                                    <span class="text-slate-400 text-xs mt-1"><span class="lang-en-el">Sales & Repairs</span><span class="lang-hi-el">सप्लाई एवं रिपेयर</span></span>
+                                </div>
+                                <div onclick="navigateToServiceAndShow('electricals')" class="cursor-pointer p-4 rounded-xl bg-slate-900/60 hover:bg-slate-800/80 transition-all border border-slate-800 flex flex-col justify-between group active:scale-95">
+                                    <span class="text-amber-400 font-bold group-hover:text-amber-300 transition-colors">⚡ Electricals</span>
+                                    <span class="text-slate-400 text-xs mt-1"><span class="lang-en-el">Batteries & Generator</span><span class="lang-hi-el">बैटरी एवं वायरिंग</span></span>
+                                </div>
+                                <div onclick="navigateToServiceAndShow('civil-painting')" class="cursor-pointer p-4 rounded-xl bg-slate-900/60 hover:bg-slate-800/80 transition-all border border-slate-800 flex flex-col justify-between group active:scale-95">
+                                    <span class="text-green-400 font-bold group-hover:text-green-300 transition-colors">🛠️ Civil & Painting</span>
+                                    <span class="text-slate-400 text-xs mt-1"><span class="lang-en-el">White washing, Repairs</span><span class="lang-hi-el">चुना एवं पुताई कार्य</span></span>
+                                </div>
+                                <div onclick="navigateToServiceAndShow('furniture')" class="cursor-pointer p-4 rounded-xl bg-slate-900/60 hover:bg-slate-800/80 transition-all border border-slate-800 flex flex-col justify-between group active:scale-95">
+                                    <span class="text-purple-400 font-bold group-hover:text-purple-300 transition-colors">🪑 Fine Furniture</span>
+                                    <span class="text-slate-400 text-xs mt-1"><span class="lang-en-el">Almirahs & Desks</span><span class="lang-hi-el">अल्मारी एवं टेबल</span></span>
+                                </div>
+                            </div>
+
+                            <div class="p-4 bg-slate-900 border border-slate-800 rounded-2xl">
+                                <div class="flex items-start space-x-3">
+                                    <span class="text-2xl">📍</span>
+                                    <div>
+                                        <p class="font-bold text-xs sm:text-sm text-gray-200">
+                                            <span class="lang-en-el">Located at Chaukaghat</span>
+                                            <span class="lang-hi-el">चौकाघाट, वाराणसी में स्थित</span>
+                                        </p>
+                                        <p class="text-xs text-slate-400 mt-0.5">
+                                            J, 13/93, Chaukaghat, Varanasi - 221001
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE MISSION STATEMENT / RANDOM QUOTES WITH SMOOTH TRANSITION (NO REFRESH BUTTON AS REQUESTED) -->
+    <section id="quote-section" class="py-12 bg-blue-600 dark:bg-blue-800 text-white transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-4xl mx-auto space-y-4">
+                <span class="text-2xl font-bold animate-bounce block">✨</span>
+                <p id="business-quote-display" class="text-lg sm:text-xl md:text-2xl font-medium italic leading-relaxed min-h-[4rem] flex items-center justify-center transition-all duration-300">
+                    <!-- Dynamic quotes will render here on loaded session -->
+                </p>
+                <div class="pt-2 flex flex-col items-center justify-center">
+                    <div class="h-1 w-20 bg-yellow-400 rounded"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES PORTFOLIO -->
+    <section id="services" class="py-16 bg-white dark:bg-gray-900 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+                    <span class="lang-en-el">Our Wide Range of Supplies & Services</span>
+                    <span class="lang-hi-el">हमारी प्रमुख सेवाएं एवं सामग्री आपूर्ति</span>
+                </h2>
+                <p class="text-slate-600 dark:text-gray-400 text-sm sm:text-base">
+                    <span class="lang-en-el">Click on any card to view randomized real-world image examples, specifications, and project portfolios instantly.</span>
+                    <span class="lang-hi-el">संबंधित वास्तविक फोटो गैलरी (रैंडमाइज़्ड तस्वीरें), पूर्ण किए गए कार्यों की सूची और उत्पाद विवरण देखने के लिए किसी भी कार्ड पर क्लिक करें।</span>
+                </p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1: IT & Computer -->
+                <div id="service-card-it-computer" onclick="openPortfolioModal('it-computer')" class="cursor-pointer bg-slate-50 dark:bg-gray-800/40 p-8 rounded-2xl border border-slate-100 dark:border-gray-800 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 relative">
+                    <div class="absolute top-4 right-4 bg-blue-600/10 text-blue-600 text-xs px-2 py-1 rounded font-bold group-hover:bg-blue-600 group-hover:text-white transition-all">
+                        <span class="lang-en-el">Click to View Photos</span><span class="lang-hi-el">फ़ोटो देखें</span>
+                    </div>
+                    <div class="bg-blue-500/10 dark:bg-blue-400/10 text-blue-600 dark:text-blue-400 p-4 rounded-xl w-fit mb-6 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">
+                        <span class="lang-en-el">Computer Supplies & IT Services</span>
+                        <span class="lang-hi-el">कंप्यूटर सप्लाई एवं आईटी सेवाएं</span>
+                    </h3>
+                    <p class="text-slate-600 dark:text-gray-300 text-sm leading-relaxed">
+                        <span class="lang-en-el">Supply of computers, customized accessories, high-grade scanners, toner cartridges, printer hardware, and comprehensive technical maintenance and repair setup.</span>
+                        <span class="lang-hi-el">कंप्यूटर सिस्टम, स्कैनर, प्रिंटर, कार्ट्रिज, कंप्यूटर टेबल एवं सभी प्रकार की आईटी सामग्री की सप्लाई तथा त्वरित रिपेयरिंग एवं रख-रखाव सेवा।</span>
+                    </p>
+                </div>
+
+                <!-- Service 2: Printing & Banner Printing -->
+                <div id="service-card-printing" onclick="openPortfolioModal('printing')" class="cursor-pointer bg-slate-50 dark:bg-gray-800/40 p-8 rounded-2xl border border-slate-100 dark:border-gray-800 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 relative">
+                    <div class="absolute top-4 right-4 bg-emerald-600/10 text-emerald-600 text-xs px-2 py-1 rounded font-bold group-hover:bg-emerald-600 group-hover:text-white transition-all">
+                        <span class="lang-en-el">Click to View Photos</span><span class="lang-hi-el">फ़ोटो देखें</span>
+                    </div>
+                    <div class="bg-emerald-500/10 dark:bg-emerald-400/10 text-emerald-600 dark:text-emerald-400 p-4 rounded-xl w-fit mb-6 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">
+                        <span class="lang-en-el">Printing, Stationery & Banner</span>
+                        <span class="lang-hi-el">प्रिंटिंग, स्टेशनरी एवं बैनर निर्माण</span>
+                    </h3>
+                    <p class="text-slate-600 dark:text-gray-300 text-sm leading-relaxed">
+                        <span class="lang-en-el">Bulk professional printing, high-impact banners, promotional flexes, signboards, corporate office stationery, customized registry, and files.</span>
+                        <span class="lang-hi-el">सभी प्रकार की कार्यालयीन स्टेशनरी, व्यावसायिक प्रिंटिंग, प्रचार-प्रसार हेतु बैनर, फ्लेक्स एवं साइनबोर्ड का निर्माण एवं त्वरित आपूर्ति।</span>
+                    </p>
+                </div>
+
+                <!-- Service 3: Electricals & Battery -->
+                <div id="service-card-electricals" onclick="openPortfolioModal('electricals')" class="cursor-pointer bg-slate-50 dark:bg-gray-800/40 p-8 rounded-2xl border border-slate-100 dark:border-gray-800 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 relative">
+                    <div class="absolute top-4 right-4 bg-amber-600/10 text-amber-600 text-xs px-2 py-1 rounded font-bold group-hover:bg-amber-600 group-hover:text-white transition-all">
+                        <span class="lang-en-el">Click to View Photos</span><span class="lang-hi-el">फ़ोटो देखें</span>
+                    </div>
+                    <div class="bg-amber-500/10 dark:bg-amber-400/10 text-amber-600 dark:text-amber-400 p-4 rounded-xl w-fit mb-6 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">
+                        <span class="lang-en-el">Electrical Items & Batteries</span>
+                        <span class="lang-hi-el">विद्युत (बिजली) सामग्री एवं बैटरी</span>
+                    </h3>
+                    <p class="text-slate-600 dark:text-gray-300 text-sm leading-relaxed">
+                        <span class="lang-en-el">Premium electrical products supply, wiring, switches, lighting systems, industrial batteries, household power solutions, generators and power-backup equipment.</span>
+                        <span class="lang-hi-el">सभी प्रकार के बिजली उपकरण, केबल, फिटिंग एक्सेसरीज़, उच्च क्षमता वाली बैटरी, इन्वर्टर तथा बिजली फिटिंग एवं आपूर्ति का विश्वसनीय कार्य।</span>
+                    </p>
+                </div>
+
+                <!-- Service 4: Civil Works & Painting -->
+                <div id="service-card-civil-painting" onclick="openPortfolioModal('civil-painting')" class="cursor-pointer bg-slate-50 dark:bg-gray-800/40 p-8 rounded-2xl border border-slate-100 dark:border-gray-800 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 relative">
+                    <div class="absolute top-4 right-4 bg-red-600/10 text-red-600 text-xs px-2 py-1 rounded font-bold group-hover:bg-red-600 group-hover:text-white transition-all">
+                        <span class="lang-en-el">Click to View Photos</span><span class="lang-hi-el">फ़ोटो देखें</span>
+                    </div>
+                    <div class="bg-red-500/10 dark:bg-red-400/10 text-red-600 dark:text-red-400 p-4 rounded-xl w-fit mb-6 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">
+                        <span class="lang-en-el">Civil Works & Painting</span>
+                        <span class="lang-hi-el">सिविल कार्य एवं रंगाई-पुताई</span>
+                    </h3>
+                    <p class="text-slate-600 dark:text-gray-300 text-sm leading-relaxed">
+                        <span class="lang-en-el">Comprehensive civil maintenance, structural repairs, professional white-washing (Chuna-wash), premium distemper, texture painting and structural finishing.</span>
+                        <span class="lang-hi-el">मकानों एवं कार्यालयों की मरम्मत, प्लास्टर, चूना पुताई, अत्याधुनिक पेंटिंग, वाटरप्रूफिंग एवं अन्य सभी प्रकार के छोटे-बड़े सिविल व मेंटेनेंस कार्य।</span>
+                    </p>
+                </div>
+
+                <!-- Service 5: Furniture Fabrication -->
+                <div id="service-card-furniture" onclick="openPortfolioModal('furniture')" class="cursor-pointer bg-slate-50 dark:bg-gray-800/40 p-8 rounded-2xl border border-slate-100 dark:border-gray-800 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 relative">
+                    <div class="absolute top-4 right-4 bg-purple-600/10 text-purple-600 text-xs px-2 py-1 rounded font-bold group-hover:bg-purple-600 group-hover:text-white transition-all">
+                        <span class="lang-en-el">Click to View Photos</span><span class="lang-hi-el">फ़ोटो देखें</span>
+                    </div>
+                    <div class="bg-purple-500/10 dark:bg-purple-400/10 text-purple-600 dark:text-purple-400 p-4 rounded-xl w-fit mb-6 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">
+                        <span class="lang-en-el">Furniture & Almirah Fabrication</span>
+                        <span class="lang-hi-el">फर्नीचर निर्माण एवं अल्मारी सप्लाई</span>
+                    </h3>
+                    <p class="text-slate-600 dark:text-gray-300 text-sm leading-relaxed">
+                        <span class="lang-en-el">Customized office desks, computer tables, high-durability iron & steel almirahs, wooden cabinets, executive chairs and custom space-saving modern furniture.</span>
+                        <span class="lang-hi-el">कार्यालय एवं घरों के लिए कंप्यूटर टेबल, लोहे एवं लकड़ी की अलमारी, मॉडर्न सोफा, ऑफिस चेयर तथा मजबूत व टिकाऊ कस्टमाइज्ड फर्नीचर निर्माण।</span>
+                    </p>
+                </div>
+
+                <!-- Service 6: AC Supply, Installation & Service (NEW!) -->
+                <div id="service-card-ac-services" onclick="openPortfolioModal('ac-services')" class="cursor-pointer bg-slate-50 dark:bg-gray-800/40 p-8 rounded-2xl border border-slate-100 dark:border-gray-800 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 relative animate-float">
+                    <div class="absolute top-4 right-4 bg-teal-600/10 text-teal-600 text-xs px-2 py-1 rounded font-bold group-hover:bg-teal-600 group-hover:text-white transition-all">
+                        <span class="lang-en-el">Click to View Photos</span><span class="lang-hi-el">फ़ोटो देखें</span>
+                    </div>
+                    <div class="bg-teal-500/10 dark:bg-teal-400/10 text-teal-600 dark:text-teal-400 p-4 rounded-xl w-fit mb-6 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M12 8a4 4 0 110 8 4 4 0 010-8z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">
+                        <span class="lang-en-el">AC Supply, Repair & Service</span>
+                        <span class="lang-hi-el">ए.सी. सप्लाई, इंस्टॉलेशन और रिपेयरिंग</span>
+                    </h3>
+                    <p class="text-slate-600 dark:text-gray-300 text-sm leading-relaxed">
+                        <span class="lang-en-el">Premium AC supplies, custom duct installations, refrigerant gas refilling, compressor overhauling, periodic HVAC servicing, and diagnostic cooling repairs.</span>
+                        <span class="lang-hi-el">सभी प्रकार के एयर कंडीशनर (AC) की सप्लाई, आधुनिक केबिन इंस्टॉलेशन, गैस चार्जिंग, कंप्रेसर रिपेयरिंग एवं अनुभवी तकनीशियनों द्वारा समयबद्ध मेंटेनेंस सर्विस।</span>
+                    </p>
+                </div>
+
+                <!-- Service 7: General Order Supply -->
+                <div id="service-card-general-order" onclick="openPortfolioModal('general-order')" class="cursor-pointer bg-slate-50 dark:bg-gray-800/40 p-8 rounded-2xl border border-slate-100 dark:border-gray-800 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 relative">
+                    <div class="absolute top-4 right-4 bg-indigo-600/10 text-indigo-600 text-xs px-2 py-1 rounded font-bold group-hover:bg-indigo-600 group-hover:text-white transition-all">
+                        <span class="lang-en-el">Click to View Photos</span><span class="lang-hi-el">फ़ोटो देखें</span>
+                    </div>
+                    <div class="bg-indigo-500/10 dark:bg-indigo-400/10 text-indigo-600 dark:text-indigo-400 p-4 rounded-xl w-fit mb-6 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">
+                        <span class="lang-en-el">General Order Supply & Generator</span>
+                        <span class="lang-hi-el">जनरल ऑर्डर एवं जनरेटर सप्लाई</span>
+                    </h3>
+                    <p class="text-slate-600 dark:text-gray-300 text-sm leading-relaxed">
+                        <span class="lang-en-el">Full-scale emergency power supply, backup silent generator hire/purchase and diverse order supply tailored for government bids and corporate events.</span>
+                        <span class="lang-hi-el">सरकारी व गैर-सरकारी विभागों के लिए निविदा/कोटेशन अनुसार जनरल सामग्री आपूर्ति, तथा किसी भी कार्यक्रम हेतु सायरेंट जनरेटर की विशेष व्यवस्था।</span>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO LIGHTBOX MODAL -->
+    <div id="portfolio-modal" class="hidden fixed inset-0 z-[100] overflow-y-auto bg-black/95 backdrop-blur-sm flex items-center justify-center p-4 transition-all duration-300">
+        <div class="relative bg-white dark:bg-gray-900 w-full max-w-3xl rounded-3xl overflow-hidden shadow-2xl border border-slate-200 dark:border-gray-800">
+            <!-- Modal Header -->
+            <div class="px-6 py-4 border-b border-slate-100 dark:border-gray-800 flex items-center justify-between bg-slate-50 dark:bg-gray-800/50">
+                <div>
+                    <span id="modal-category-tag" class="text-xs font-bold uppercase text-blue-600 dark:text-blue-400">Category Tag</span>
+                    <h3 id="modal-title" class="text-xl font-extrabold text-slate-900 dark:text-white">Service Gallery</h3>
+                </div>
+                <button onclick="closePortfolioModal()" class="text-slate-400 hover:text-slate-600 dark:hover:text-white bg-slate-200/50 dark:bg-gray-800 p-2 rounded-full transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Modal Content & Image Frame -->
+            <div class="p-6 space-y-6">
+                <!-- Large Image Viewer -->
+                <div class="relative w-full h-64 sm:h-96 bg-slate-100 dark:bg-gray-950 rounded-2xl overflow-hidden border border-slate-100 dark:border-gray-800">
+                    <img id="modal-main-image" src="" alt="Portfolio Image Example" class="w-full h-full object-cover transition-opacity duration-300">
+                    
+                    <!-- Prev/Next inside image -->
+                    <button onclick="prevModalImage()" class="absolute left-3 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white p-3 rounded-full transition-all active:scale-90 font-bold">
+                        ◀
+                    </button>
+                    <button onclick="nextModalImage()" class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white p-3 rounded-full transition-all active:scale-90 font-bold">
+                        ▶
+                    </button>
+                </div>
+
+                <!-- Thumbnails Container -->
+                <div>
+                    <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">
+                        <span class="lang-en-el">Visit-specific Persistent Selection (Click to View)</span><span class="lang-hi-el">सत्र-विशेष रैंडमाइज्ड तस्वीरें (देखने के लिए क्लिक करें)</span>
+                    </p>
+                    <div id="modal-thumbnails" class="flex gap-3 overflow-x-auto pb-2">
+                        <!-- Thumbnail images injected dynamically -->
+                    </div>
+                </div>
+
+                <!-- Active Details -->
+                <div class="bg-blue-50/50 dark:bg-blue-950/20 p-4 rounded-xl border border-blue-100/50 dark:border-blue-900/30 text-sm">
+                    <p id="modal-desc" class="text-slate-600 dark:text-gray-300 leading-relaxed font-medium">
+                        Detailed specific service captions will appear here based on the selected catalog index.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Footer close -->
+            <div class="px-6 py-4 bg-slate-50 dark:bg-gray-800/50 border-t border-slate-100 dark:border-gray-800 text-right">
+                <button onclick="closePortfolioModal()" class="px-5 py-2.5 rounded-xl bg-slate-200 dark:bg-gray-800 text-slate-800 dark:text-slate-200 hover:bg-slate-300 dark:hover:bg-gray-700 font-bold transition text-sm">
+                    <span class="lang-en-el">Close Gallery</span><span class="lang-hi-el">गैलरी बंद करें</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- INTERACTIVE ORDER & QUOTE BUILDER -->
+    <section id="quote-builder" class="py-16 bg-slate-50 dark:bg-gray-950/70 border-t border-b border-slate-200 dark:border-gray-900 transition-colors duration-300">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white dark:bg-gray-900 rounded-3xl shadow-xl p-6 sm:p-10 border border-slate-200/60 dark:border-gray-800">
+                
+                <div class="text-center mb-8">
+                    <span class="text-3xl">📋</span>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold tracking-tight mt-3">
+                        <span class="lang-en-el">Create an Instant Inquiry Slip</span>
+                        <span class="lang-hi-el">अपनी आवश्यकता पर्ची तैयार करें</span>
+                    </h3>
+                    <p class="text-xs sm:text-sm text-slate-500 dark:text-gray-400 mt-2">
+                        <span class="lang-en-el">Select the items or services you require, add details, and generate a message to send directly to us!</span>
+                        <span class="lang-hi-el">आवश्यक सामग्री चुनें, विवरण भरें और अपनी मांग पर्ची सीधे हमारे व्हाट्सएप्प अथवा ईमेल पर भेजने के लिए तैयार करें।</span>
+                    </p>
+                </div>
+
+                <!-- Interactive Widget UI -->
+                <div class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 dark:text-gray-300 mb-2">
+                            <span class="lang-en-el">1. Choose Service/Product Category</span>
+                            <span class="lang-hi-el">1. सेवा/सामग्री श्रेणी चुनें</span>
+                        </label>
+                        <select id="builder-category" class="w-full bg-slate-50 dark:bg-gray-800 border border-slate-300 dark:border-gray-700 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-blue-500 transition outline-none">
+                            <option value="Stationery & Printing" class="lang-en-el">Stationery & Banner Printing</option>
+                            <option value="स्टेशनरी और प्रिंटिंग" class="lang-hi-el">स्टेशनरी और बैनर प्रिंटिंग</option>
+                            <option value="Computer & Scanner Supply" class="lang-en-el">Computer, Scanner & Toner Supplies</option>
+                            <option value="कंप्यूटर और आईटी सप्लाई" class="lang-hi-el">कंप्यूटर, स्कैनर और टोनर सप्लाई</option>
+                            <option value="Electricals & Battery" class="lang-en-el">Electrical Items & Generators</option>
+                            <option value="इलेक्ट्रिकल और जनरेटर" class="lang-hi-el">इलेक्ट्रिकल और जनरेटर</option>
+                            <option value="Civil & Wall Painting" class="lang-en-el">Civil Repairs & White-washing</option>
+                            <option value="सिविल कार्य और पुताई" class="lang-hi-el">सिविल कार्य और रंगाई-पुताई</option>
+                            <option value="Furniture Construction" class="lang-en-el">Custom Furniture & Almirahs</option>
+                            <option value="फर्नीचर एवं अलमारी" class="lang-hi-el">कस्टमाइज्ड फर्नीचर एवं अलमारी</option>
+                            <option value="AC Supply, Repair & Service" class="lang-en-el">AC Supply, Repair & Service</option>
+                            <option value="ए.सी. सप्लाई और सर्विस" class="lang-hi-el">ए.सी. (AC) सप्लाई, रिपेयरिंग एवं सर्विस</option>
+                            <option value="Other Order Supplies" class="lang-en-el">Other General Order Supply</option>
+                            <option value="अन्य जनरल ऑर्डर" class="lang-hi-el">अन्य सभी प्रकार के जनरल ऑर्डर</option>
+                        </select>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <div class="sm:col-span-2">
+                            <label class="block text-sm font-bold text-slate-700 dark:text-gray-300 mb-2">
+                                <span class="lang-en-el">Item Description / Repair Details</span>
+                                <span class="lang-hi-el">सामग्री का विवरण / कार्य सम्बन्धी विवरण</span>
+                            </label>
+                            <input id="builder-item" type="text" placeholder="e.g. A4 Printer Paper Boxes, Office Painting" class="w-full bg-slate-50 dark:bg-gray-800 border border-slate-300 dark:border-gray-700 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-blue-500 transition outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 dark:text-gray-300 mb-2">
+                                <span class="lang-en-el">Approx. Quantity/Scope</span>
+                                <span class="lang-hi-el">अनुमानित मात्रा/स्कोप</span>
+                            </label>
+                            <input id="builder-qty" type="text" placeholder="e.g. 10 Boxes / 2 Rooms" class="w-full bg-slate-50 dark:bg-gray-800 border border-slate-300 dark:border-gray-700 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-blue-500 transition outline-none">
+                        </div>
+                    </div>
+
+                    <div class="text-right">
+                        <button onclick="addItemToQuote()" class="inline-flex items-center justify-center px-5 py-2.5 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-sm transition transform active:scale-95 shadow-md hover:shadow-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                            </svg>
+                            <span class="lang-en-el">Add to My Inquiry List</span>
+                            <span class="lang-hi-el">सूची में जोड़ें</span>
+                        </button>
+                    </div>
+
+                    <!-- Selected Items list container -->
+                    <div class="border border-dashed border-slate-200 dark:border-gray-800 rounded-2xl p-4 bg-slate-50/50 dark:bg-gray-900/50">
+                        <h4 class="text-xs font-extrabold uppercase tracking-wider text-slate-400 mb-3 flex justify-between items-center">
+                            <span>
+                                <span class="lang-en-el">My Order Slip Items</span>
+                                <span class="lang-hi-el">मेरी आवश्यक सूची</span>
+                            </span>
+                            <button onclick="clearQuote()" class="text-red-500 hover:text-red-600 normal-case font-semibold text-xs transition">
+                                <span class="lang-en-el">Clear List</span>
+                                <span class="lang-hi-el">सूची साफ़ करें</span>
+                            </button>
+                        </h4>
+                        
+                        <div id="quote-items-wrapper" class="space-y-2">
+                            <!-- Dynamically generated items -->
+                            <p id="no-items-text" class="text-sm text-slate-400 italic py-4 text-center">
+                                <span class="lang-en-el">No items added yet. Choose from above and click add!</span>
+                                <span class="lang-hi-el">अभी कोई सामग्री नहीं जोड़ी गई है। सूची में जोड़ें बटन पर क्लिक करें।</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Quote Action buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-slate-100 dark:border-gray-800">
+                        <p class="text-xs text-slate-400 max-w-sm">
+                            <span class="lang-en-el">Once submitted, this order summary will open in WhatsApp to send directly to Business India.</span>
+                            <span class="lang-hi-el">इस सूची को आगे बढ़ाने पर यह सीधे हमारे व्हाट्सएप्प पर आपकी जानकारी के साथ सेंड करने के लिए अनुकूलित हो जाएगी।</span>
+                        </p>
+                        <button onclick="submitQuote()" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 rounded-xl bg-green-600 hover:bg-green-700 text-white font-bold transition transform hover:-translate-y-0.5 shadow-lg shadow-green-500/20 active:translate-y-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.244 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.501-5.731-1.456L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.97C16.59 1.968 14.117.943 11.5.943c-5.438 0-9.864 4.37-9.868 9.8.001 1.77.484 3.498 1.4 5.048l-1.019 3.722 3.822-1.002zM16.14 14.8c-.24-.12-1.417-.698-1.637-.778-.22-.08-.381-.12-.542.12-.16.24-.622.778-.762.938-.14.16-.28.18-.52.06-.24-.12-.1.35-1.15-1.41-1.05-.94-1.76-2.1-1.96-2.46-.2-.36-.02-.56.16-.74.16-.16.36-.42.54-.62.18-.2.24-.34.36-.56.12-.22.06-.41-.03-.57-.09-.16-.76-1.84-1.05-2.53-.27-.65-.56-.56-.76-.57h-.65c-.22 0-.58.08-.88.4-.3.32-1.15 1.12-1.15 2.73s1.17 3.16 1.33 3.38c.16.22 2.3 3.52 5.58 4.94 2.73 1.18 3.29 1.11 3.89.85.6-.26 1.417-.698 1.617-1.318.2-.62.2-.1.14-.2-.06-.1-.23-.22-.47-.34z"/>
+                            </svg>
+                            <span class="lang-en-el">Send Inquiry via WhatsApp</span>
+                            <span class="lang-hi-el">व्हाट्सएप्प पर भेजें</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- DETAILED FAQS -->
+    <section id="faqs" class="py-16 bg-white dark:bg-gray-900 transition-colors duration-300">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight">
+                    <span class="lang-en-el">Frequently Asked Questions (FAQs)</span>
+                    <span class="lang-hi-el">अक्सर पूछे जाने वाले सवाल</span>
+                </h2>
+                <p class="text-xs sm:text-sm text-slate-500 dark:text-gray-400 mt-2">
+                    <span class="lang-en-el">Clear answers regarding our services, delivery speed, and policies.</span>
+                    <span class="lang-hi-el">हमारी सेवाओं, वितरण और भुगतान प्रक्रिया से संबंधित आवश्यक जानकारी।</span>
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                
+                <!-- FAQ 1 -->
+                <div class="border border-slate-200 dark:border-gray-800 rounded-2xl p-5 hover:bg-slate-50 dark:hover:bg-gray-800/40 transition duration-300">
+                    <h3 class="font-bold text-base sm:text-lg">
+                        <span class="lang-en-el">Q. What regions do you supply in?</span>
+                        <span class="lang-hi-el">प्र. आपकी सप्लाई किस-किस क्षेत्र में उपलब्ध है?</span>
+                    </h3>
+                    <p class="text-sm text-slate-600 dark:text-gray-300 mt-2 leading-relaxed">
+                        <span class="lang-en-el">We operate prominently inside Varanasi, Uttar Pradesh, and adjoining districts for major corporate and government orders.</span>
+                        <span class="lang-hi-el">हम प्रमुख रूप से वाराणसी (चौकाघाट), उत्तर प्रदेश एवं इसके आस-पास के क्षेत्रों में व्यावसायिक तथा सरकारी ऑर्डर्स की तीव्र आपूर्ति प्रदान करते हैं।</span>
+                    </p>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="border border-slate-200 dark:border-gray-800 rounded-2xl p-5 hover:bg-slate-50 dark:hover:bg-gray-800/40 transition duration-300">
+                    <h3 class="font-bold text-base sm:text-lg">
+                        <span class="lang-en-el">Q. Can we customize the furniture specifications?</span>
+                        <span class="lang-hi-el">प्र. क्या हम फर्नीचर और टेबल को अपने अनुसार डिज़ाइन करा सकते हैं?</span>
+                    </h3>
+                    <p class="text-sm text-slate-600 dark:text-gray-300 mt-2 leading-relaxed">
+                        <span class="lang-en-el">Yes, we specialize in building highly tailored wooden and metal almirahs, computer desks, and cabinets exactly as per client dimensional requests.</span>
+                        <span class="lang-hi-el">जी हाँ, हम ग्राहकों की आवश्यकता एवं दी गई माप के अनुसार उच्च गुणवत्ता की लकड़ी एवं लोहे की कस्टमाइज्ड अलमारी, कंप्यूटर टेबल तथा ऑफिस केबिन का निर्माण करते हैं।</span>
+                    </p>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="border border-slate-200 dark:border-gray-800 rounded-2xl p-5 hover:bg-slate-50 dark:hover:bg-gray-800/40 transition duration-300">
+                    <h3 class="font-bold text-base sm:text-lg">
+                        <span class="lang-en-el">Q. How do you ensure product quality and fair prices?</span>
+                        <span class="lang-hi-el">प्र. आप गुणवत्तापूर्ण उत्पाद और उचित मूल्य कैसे सुनिश्चित करते हैं?</span>
+                    </h3>
+                    <p class="text-sm text-slate-600 dark:text-gray-300 mt-2 leading-relaxed">
+                        <span class="lang-en-el">We source certified products directly from trusted manufacturers, allowing us to supply premium-grade items with highly optimized competitive bidding and rate structures.</span>
+                        <span class="lang-hi-el">हम सीधे विश्वसनीय निर्माताओं से थोक दरों पर प्रमाणित सामग्री मंगाते हैं, जिससे हमारे ग्राहकों को उच्च गुणवत्ता वाली सामग्री अत्यंत प्रतिस्पर्धी और किफायती मूल्य पर उपलब्ध हो पाती है।</span>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT, LOCATION & MAP -->
+    <section id="contact" class="py-16 bg-slate-50 dark:bg-gray-950 border-t border-slate-200 dark:border-gray-900 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Left: Contact info -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-blue-600 dark:text-blue-400 font-extrabold text-sm uppercase tracking-wider">
+                            <span class="lang-en-el">Get in touch</span>
+                            <span class="lang-hi-el">संपर्क विवरण</span>
+                        </span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mt-2">
+                            <span class="lang-en-el">Reach Out to Business India</span>
+                            <span class="lang-hi-el">सम्पर्क सूत्र एवं कार्यालय</span>
+                        </h2>
+                        <p class="text-sm text-slate-500 dark:text-gray-400 mt-3 leading-relaxed">
+                            <span class="lang-en-el">Have queries, bulk orders, or custom repair requirements? Our responsive team is always available to assist you.</span>
+                            <span class="lang-hi-el">यदि आपके पास थोक ऑर्डर, कस्टमाइज्ड सामग्री आपूर्ति या रिपेयरिंग सम्बन्धी कोई पूछताछ है, तो बेझिझक संपर्क करें।</span>
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <!-- Phone -->
+                        <a href="tel:+919415448909" class="flex items-center space-x-4 p-4 rounded-xl bg-white dark:bg-gray-900 border border-slate-200/60 dark:border-gray-800 hover:shadow-md transition">
+                            <div class="bg-blue-500/10 text-blue-600 dark:text-blue-400 p-3 rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 00.099.281l-.918.918a13.963 13.963 0 005.5 5.5l.918-.918a1 1 0 01.28-.1c.642.162 1.306.244 1.977.244a1 1 0 011 1v3.28a2 2 0 01-2 2a13.921 13.921 0 01-11-11z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">
+                                    <span class="lang-en-el">Call or WhatsApp</span>
+                                    <span class="lang-hi-el">कॉल अथवा व्हाट्सएप्प</span>
+                                </p>
+                                <p class="text-base sm:text-lg font-bold text-slate-800 dark:text-gray-100">+91 9415448909</p>
+                            </div>
+                        </a>
+
+                        <!-- Email -->
+                        <a href="mailto:businessvns@gmail.com" class="flex items-center space-x-4 p-4 rounded-xl bg-white dark:bg-gray-900 border border-slate-200/60 dark:border-gray-800 hover:shadow-md transition">
+                            <div class="bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 p-3 rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">
+                                    <span class="lang-en-el">Official Email</span>
+                                    <span class="lang-hi-el">आधिकारिक ईमेल आईडी</span>
+                                </p>
+                                <p class="text-base sm:text-lg font-bold text-slate-800 dark:text-gray-100 break-all">businessvns@gmail.com</p>
+                            </div>
+                        </a>
+
+                        <!-- Address -->
+                        <div class="flex items-start space-x-4 p-4 rounded-xl bg-white dark:bg-gray-900 border border-slate-200/60 dark:border-gray-800">
+                            <div class="bg-red-500/10 text-red-600 dark:text-red-400 p-3 rounded-lg mt-0.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">
+                                    <span class="lang-en-el">Our Physical Office Address</span>
+                                    <span class="lang-hi-el">कार्यालय का मुख्य पता</span>
+                                </p>
+                                <p class="text-sm sm:text-base font-bold text-slate-800 dark:text-gray-100 mt-1">
+                                    J 8/11 A-J-1, Digia Jaitpura, Varanasi, Uttar Pradesh 221001, India
+                                </p>
+                                <p class="text-xs font-semibold text-blue-600 dark:text-blue-400 mt-1">
+                                    <span class="lang-en-el">PIN Code: 221001</span>
+                                    <span class="lang-hi-el">पिन कोड: 221001</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Active Quick Query Form -->
+                <div class="lg:col-span-7 bg-white dark:bg-gray-900 p-6 sm:p-10 rounded-3xl border border-slate-200/60 dark:border-gray-800 shadow-xl relative overflow-hidden">
+                    
+                    <h3 class="text-2xl font-bold mb-6">
+                        <span class="lang-en-el">Send a Quick Message</span>
+                        <span class="lang-hi-el">त्वरित संदेश प्रेषित करें</span>
+                    </h3>
+
+                    <!-- Message response notification box -->
+                    <div id="contact-success-notification" class="hidden mb-6 p-4 rounded-xl bg-green-500/10 border border-green-500/20 text-green-700 dark:text-green-400 text-sm font-semibold flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span>
+                            <span class="lang-en-el">Thank you! Your message inquiry details have been composed successfully.</span>
+                            <span class="lang-hi-el">धन्यवाद! आपका संदेश सफलतापूर्वक तैयार कर लिया गया है।</span>
+                        </span>
+                    </div>
+
+                    <form id="quick-contact-form" onsubmit="handleContactFormSubmit(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-gray-400 mb-1.5">
+                                <span class="lang-en-el">Full Name</span>
+                                <span class="lang-hi-el">आपका नाम</span>
+                            </label>
+                            <input required id="contact-name" type="text" placeholder="e.g. Ramesh Kumar" class="w-full bg-slate-50 dark:bg-gray-800/80 border border-slate-300 dark:border-gray-700 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-blue-500 transition outline-none">
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-gray-400 mb-1.5">
+                                    <span class="lang-en-el">Phone Number</span>
+                                    <span class="lang-hi-el">फोन नंबर</span>
+                                </label>
+                                <input required id="contact-phone" type="tel" placeholder="+91 XXXXX XXXXX" class="w-full bg-slate-50 dark:bg-gray-800/80 border border-slate-300 dark:border-gray-700 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-blue-500 transition outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-gray-400 mb-1.5">
+                                    <span class="lang-en-el">Email Address (Optional)</span>
+                                    <span class="lang-hi-el">ईमेल (वैकल्पिक)</span>
+                                </label>
+                                <input id="contact-email" type="email" placeholder="example@gmail.com" class="w-full bg-slate-50 dark:bg-gray-800/80 border border-slate-300 dark:border-gray-700 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-blue-500 transition outline-none">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-gray-400 mb-1.5">
+                                <span class="lang-en-el">Requirement / Services Needed</span>
+                                <span class="lang-hi-el">आवश्यकता का संक्षिप्त विवरण</span>
+                            </label>
+                            <textarea required id="contact-msg" rows="4" placeholder="Mention stationery items, furniture or painting requirements..." class="w-full bg-slate-50 dark:bg-gray-800/80 border border-slate-300 dark:border-gray-700 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-blue-500 transition outline-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-extrabold text-base transition transform hover:-translate-y-0.5 shadow-lg shadow-blue-500/10 active:translate-y-0">
+                            <span class="lang-en-el">Send Inquiry Slip</span>
+                            <span class="lang-hi-el">प्रस्ताव/पूछताछ भेजें</span>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- Varanasi / Chaukaghat Map Preview Visual -->
+            <div class="mt-12 rounded-3xl overflow-hidden shadow-lg border border-slate-200 dark:border-gray-800 h-96 relative bg-slate-200 dark:bg-gray-800">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.1837059102403!2d82.9996024!3d25.3315993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2e28325a75e3%3A0xe13b94b0d061f5df!2sChaukaghat%2C%20Varanasi%2C%20Uttar%20Pradesh%20221001!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                        class="w-full h-full border-0 grayscale dark:invert" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <div class="absolute bottom-4 left-4 bg-white/90 dark:bg-gray-900/95 backdrop-blur px-4 py-2.5 rounded-xl shadow-lg border border-slate-100 dark:border-gray-800 text-xs font-bold flex items-center space-x-2">
+                    <span class="inline-block w-2.5 h-2.5 bg-red-600 rounded-full animate-bounce"></span>
+                    <span>J, 13/93, Chaukaghat, Varanasi</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-300 dark:bg-gray-980 border-t border-slate-800 pt-16 pb-8 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                
+                <!-- About Business India -->
+                <div class="space-y-4">
+                    <h4 class="text-xl font-extrabold text-white">Business India</h4>
+                    <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+                        <span class="lang-en-el">Experienced, reliable, and premium supplier and service executor for multiple administrative files, stationary, painting and furniture assets.</span>
+                        <span class="lang-hi-el">कार्यालय सामग्री, प्रिंटिंग, स्टेशनरी, फर्नीचर निर्माण, रिपेयरिंग, इलेक्ट्रिकल एवं बिजली सामग्री तथा समस्त जनरल ऑर्डर की भरोसेमंद सेवा।</span>
+                    </p>
+                </div>
+
+                <!-- Footer Navigation / Fast Mappings under "Our Offerings" -->
+                <div class="space-y-4">
+                    <h4 class="text-sm font-bold text-white uppercase tracking-wider">
+                        <span class="lang-en-el">Our Offerings</span>
+                        <span class="lang-hi-el">हमारी पेशकश</span>
+                    </h4>
+                    <ul class="space-y-2 text-xs sm:text-sm text-slate-400">
+                        <li class="cursor-pointer hover:text-white transition" onclick="navigateToServiceAndShow('electricals')">⚡ Electrical & Generators</li>
+                        <li class="cursor-pointer hover:text-white transition" onclick="navigateToServiceAndShow('it-computer')">💻 Computer Repair & Supply</li>
+                        <li class="cursor-pointer hover:text-white transition" onclick="navigateToServiceAndShow('furniture')">🪑 Office Furniture & Desks</li>
+                        <li class="cursor-pointer hover:text-white transition" onclick="navigateToServiceAndShow('civil-painting')">🛠️ Civil Work & Painting</li>
+                        <li class="cursor-pointer hover:text-white transition" onclick="navigateToServiceAndShow('printing')">📝 Printing & Stationeries</li>
+                        <li class="cursor-pointer hover:text-white transition" onclick="navigateToServiceAndShow('ac-services')">❄️ AC Supply & Repair</li>
+                    </ul>
+                </div>
+
+                <!-- Contact Fast Links -->
+                <div class="space-y-4">
+                    <h4 class="text-sm font-bold text-white uppercase tracking-wider">
+                        <span class="lang-en-el">Fast Contacts</span>
+                        <span class="lang-hi-el">त्वरित संपर्क</span>
+                    </h4>
+                    <ul class="space-y-2.5 text-xs sm:text-sm text-slate-400">
+                        <li class="flex items-center space-x-2">
+                            <span class="text-yellow-400">📞</span>
+                            <a href="tel:+919415448909" class="hover:text-white transition">+91 9415448909</a>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-yellow-400">✉️</span>
+                            <a href="mailto:businessvns@gmail.com" class="hover:text-white transition break-all">businessvns@gmail.com</a>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <span class="text-yellow-400 mt-0.5">📍</span>
+                            <span>Chaukaghat, Varanasi - 221001</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Working hours / trust badge -->
+                <div class="space-y-4 bg-slate-800/40 p-5 rounded-2xl border border-slate-800/80">
+                    <h4 class="text-sm font-extrabold text-white uppercase tracking-wider flex items-center space-x-2">
+                        <span class="w-2.5 h-2.5 bg-green-500 rounded-full"></span>
+                        <span>
+                            <span class="lang-en-el">Business Hours</span>
+                            <span class="lang-hi-el">व्यापारिक समय</span>
+                        </span>
+                    </h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        <span class="lang-en-el">Monday - Saturday:<br> 10:00 AM - 08:30 PM<br>Varanasi, Uttar Pradesh</span>
+                        <span class="lang-hi-el">सोमवार - शनिवार:<br> सुबह 10:00 - रात्रि 08:30<br>वाराणसी, उत्तर प्रदेश</span>
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Bottom copyrighted block -->
+            <div class="border-t border-slate-800 pt-8 mt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+                <p class="text-center sm:text-left">
+                    &copy; 2026 Business India. All rights reserved. 
+                    <span class="lang-en-el">Designed professionally.</span>
+                    <span class="lang-hi-el">व्यावसायिक रूप से तैयार।</span>
+                </p>
+                <p class="mt-4 sm:mt-0 text-center text-slate-400 font-bold">
+                    <span class="lang-en-el">Quality Product • Fair Price • Timely Service</span>
+                    <span class="lang-hi-el">गुणवत्तापूर्ण उत्पाद • उचित मूल्य • समयबद्ध सेवा</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE SCRIPTS -->
+    <script>
+        // System Themes & Language States
+        let currentLang = 'hi'; 
+        let currentTheme = 'light';
+
+        // 1. Visit-Session Management System (To change images persistently across distinct visits)
+        // Retrieve persistent visitation index from LocalStorage
+        let visitSession = parseInt(localStorage.getItem('mangal_visit_session') || '0');
+        // Increment the session state index for the NEXT visit
+        localStorage.setItem('mangal_visit_session', (visitSession + 1).toString());
+
+        // We use the visitSession modulo calculations to ensure completely distinct sets of images are pulled per visit.
+        const SLIDE_POOL_SIZE = 5;
+        const GALLERY_POOL_SIZE = 3;
+
+        // 2. Extended Unsplash Image Repositories (To ensure zero repetitions across visit 1, visit 2, visit 3)
+        // 15 distinct high-quality slides
+        const masterSlideshowPool = [
+            // Visit Group 0 (Slides 0-4)
+            { url: "https://images.unsplash.com/photo-1512418490979-92798cec1380?w=1200&auto=format&fit=crop&q=80", en: "Premium Corporate Stationery & Institutional Print Banners", hi: "विश्वसनीय सरकारी स्टेशनरी, प्रिंटिंग फ़ाइलें एवं भव्य बैनर सप्लाई" },
+            { url: "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=1200&auto=format&fit=crop&q=80", en: "Custom Computers, Scanners & Premium IT Maintenance", hi: "आधुनिक कंप्यूटर प्रणालियाँ, स्कैनर मशीन एवं उत्कृष्ट तकनीकी सेवाएं" },
+            { url: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1200&auto=format&fit=crop&q=80", en: "Heavy-duty Batteries & Power Generator Logistics", hi: "उत्कृष्ट बिजली उपकरण, फिटिंग केबल एवं जनरेटर पावर बैकअप" },
+            { url: "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1200&auto=format&fit=crop&q=80", en: "Civil Reconstruction, Wall Finishing & Painting Solutions", hi: "मजबूत सीमेंट प्लास्टर मेंटेनेंस कार्य एवं प्रोफेशनल रंगाई-पुताई" },
+            { url: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=1200&auto=format&fit=crop&q=80", en: "Custom Wood Desks, Executive Chairs & Steel Almirahs", hi: "आरामदायक कुर्सियां, कंप्यूटर टेबल एवं टिकाऊ लोहे व स्टील की अलमारी" },
+            
+            // Visit Group 1 (Slides 5-9)
+            { url: "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=1200&auto=format&fit=crop&q=80", en: "High-Volume Catalog Publishing & Office Stationery Kits", hi: "व्यावसायिक फ़ाइल फोल्डर, डिजिटल रजिस्टर एवं स्टेशनरी बंडल आपूर्ति" },
+            { url: "https://images.unsplash.com/photo-1547082299-de196ea013d6?w=1200&auto=format&fit=crop&q=80", en: "Premium Workstation Hardware Setups & Responsive Scanners", hi: "स्कैनर हार्डवेयर असेंबली एवं प्रशासनिक कार्यालयीन कंप्यूटर सप्लाई" },
+            { url: "https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?w=1200&auto=format&fit=crop&q=80", en: "Safety-Certified Electrical Cables, Safety Switches & Backups", hi: "सुरक्षित बिजली फिटिंग, ISI-मार्क केबल्स एवं इनवर्टर बैटरी लॉजिस्टिक्स" },
+            { url: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=1200&auto=format&fit=crop&q=80", en: "Structural Waterproofing Cement Repairs & Wall Finishing Finish", hi: "दीवारों की मरम्मत, वॉटरप्रूफिंग सुरक्षा कोटिंग एवं आधुनिक डिस्टेंपर" },
+            { url: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200&auto=format&fit=crop&q=80", en: "Secure Steel Document Lockers & Custom Office Desk Panels", hi: "कार्यालय के लिए मजबूत स्टील अलमारी एवं केबिन लकड़ी फर्नीचर वर्क" },
+
+            // Visit Group 2 (Slides 10-14)
+            { url: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=1200&auto=format&fit=crop&q=80", en: "Bulk Institutional Registries & Official File Covers Supply", hi: "विभिन्न विभागों हेतु सरकारी निविदा अनुसार रजिस्टर एवं छपाई कार्य" },
+            { url: "https://images.unsplash.com/photo-1618424181497-157f25b6ddd5?w=1200&auto=format&fit=crop&q=80", en: "High-Speed Laser Printers & Compatible Duplex Scanners", hi: "प्रीमियम क्वालिटी लेज़र प्रिंटर, मूल टोनर कार्ट्रिज एवं आईटी एसेसरीज" },
+            { url: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&auto=format&fit=crop&q=80", en: "Silent Standby Generators For Uninterrupted Power Distribution", hi: "किसी भी कार्यक्रम के लिए अत्याधुनिक सायरेंट डीजल जनरेटर व्यवस्था" },
+            { url: "https://images.unsplash.com/photo-1534224039826-c7a0eda0e6b3?w=1200&auto=format&fit=crop&q=80", en: "Premium Wall Putty Base Application & High Gloss Paint Works", hi: "उत्कृष्ट वॉल पुट्टी कोटिंग कार्य एवं आकर्षक टेक्सचर पेंटिंग सर्विस" },
+            { url: "https://images.unsplash.com/photo-1544015759-33790c185c50?w=1200&auto=format&fit=crop&q=80", en: "Premium Wooden Conference Tables & Heavy Gauge Metal Cabinets", hi: "सॉलिड लकड़ी कॉन्फ्रेंस मेज़, ऑफिस सोफा सेट एवं मजबूत फाइल रैक" }
+        ];
+
+        // 3. Multi-image Representative Portfolio Repositories (9 distinct images per category to alternate perfectly)
+        const masterServiceGalleries = {
+            'it-computer': {
+                tagEn: "IT Supplies & Maintenance", tagHi: "कंप्यूटर एवं आईटी सर्विसेज़",
+                titleEn: "Computer, Scanner & Hardware Supply Gallery", titleHi: "कंप्यूटर, स्कैनर एवं सहायक उपकरण आपूर्ति प्रदर्शनी",
+                descriptionEn: "We supply standard desktop computers, customized workstations, heavy-duty duplex scanners, original cartridge ink/toners, and execute responsive technical repairs in Varanasi.",
+                descriptionHi: "हम कंप्यूटर सेट, अत्याधुनिक स्कैनर, प्रिंटर, मूल टोनर कार्ट्रिज की थोक आपूर्ति और कुशल इंजीनियरों द्वारा त्वरित हार्डवेयर मरम्मत प्रदान करते हैं।",
+                images: [
+                    "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1547082299-de196ea013d6?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1618424181497-157f25b6ddd5?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1600541519401-44712e6833ae?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop"
+                ]
+            },
+            'printing': {
+                tagEn: "Stationery & Flex Printing", tagHi: "स्टेशनरी एवं फ्लेक्स प्रिंटिंग",
+                titleEn: "Professional Publishing & High-impact Banners", titleHi: "थोक प्रिंटिंग, स्टेशनरी फ़ाइलें एवं प्रचार बैनर",
+                descriptionEn: "Offering high-resolution flex banners, vinyl prints, registers, notebooks, administrative files, and all corporate/office stationary products.",
+                descriptionHi: "कार्यालयी उपयोग हेतु सर्वोत्तम कागज़, पंजिका (रजिस्टर), फ़ाइल फोल्डर, डिजिटल बैनर, फ्लेक्स एवं होर्डिंग्स की त्वरित छपाई व आपूर्ति उपलब्ध है।",
+                images: [
+                    "https://images.unsplash.com/photo-1512418490979-92798cec1380?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1562654501-a0ccc0fc3fb1?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1586075010923-2dd4570fb338?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1468779036391-52341f60b55d?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1504270997636-07ddfbd48945?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1568252542512-9fe8fe9c87bb?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1532153975070-2e9ab71f1b14?w=800&auto=format&fit=crop"
+                ]
+            },
+            'electricals': {
+                tagEn: "Power & Electrical Supply", tagHi: "इलेक्ट्रिकल एवं पावर सप्लाई",
+                titleEn: "Lighting Systems, Cables & Backup Batteries", titleHi: "केबल फिटिंग, प्रकाश उपकरण एवं उच्च क्षमता बैटरी",
+                descriptionEn: "Procuring ISI-marked safety cables, modern LED light setups, switches, inverter batteries, and rental generators for administrative offices and events.",
+                descriptionHi: "आईएसआई-चिह्नित केबल्स, स्विच बोर्ड, एलईडी फिटिंग, बड़ी औद्योगिक बैटरी एवं आवश्यकतानुसार इमरजेंसी जनरेटर की सुदृढ़ व्यवस्था।",
+                images: [
+                    "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1461360370896-922624d12aa1?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1563770660941-20978e870e26?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&auto=format&fit=crop"
+                ]
+            },
+            'civil-painting': {
+                tagEn: "Civil Repair & Custom Painting", tagHi: "सिविल वर्क एवं पुताई कार्य",
+                titleEn: "Structural Maintenance & Premium Wall Distempering", titleHi: "मकान मरम्मत, टाइल्स फिटिंग एवं दीवारों की पेंटिंग",
+                descriptionEn: "Executing structural plaster repairs, waterproofing, premium double-coat white washing (Chuna), wall putty, and luxury emulsion finishing.",
+                descriptionHi: "दीवारों का प्लास्टर मरम्मत, वाटरप्रूफिंग उपचार, टिकाऊ चूना पुताई (White wash), पुट्टी कार्य और सुंदर रंगों से पेंटिंग का पूर्ण काम।",
+                images: [
+                    "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1534224039826-c7a0eda0e6b3?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1590069261209-f8e9b8642343?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&auto=format&fit=crop"
+                ]
+            },
+            'furniture': {
+                tagEn: "Office Furniture Fabrication", tagHi: "कार्यालयीन लकड़ी एवं लोहे का फर्निचर",
+                titleEn: "Metal Almirahs, Computer Tables & Cabinets", titleHi: "स्टील अलमारी, कंप्यूटर टेबल एवं एक्सीक्यूटिव कुर्सियां",
+                descriptionEn: "Creating bespoke wooden office setups, computer desks with cable channels, storage cabinets, and highly secure heavy-gauge metal almirahs.",
+                descriptionHi: "उच्च गुणवत्ता की लकड़ी से कंप्यूटर टेबल, मजबूत केबिन फर्निचर, बैठक कुर्सियां तथा कार्यालय दस्तावेजों की सुरक्षा हेतु भारी लोहे व स्टील की अलमारी।",
+                images: [
+                    "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1544015759-33790c185c50?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1517502884422-41eaaced0168?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1503602642458-232111445657?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1519219788971-8d9797e0928e?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format&fit=crop"
+                ]
+            },
+            'ac-services': {
+                tagEn: "Air Conditioning Solutions", tagHi: "ए.सी. एवं कुलिंग सेवाएं",
+                titleEn: "AC Units, Precision Installation & Repair Showcase", titleHi: "एयर कंडीशनर यूनिट्स, इंस्टॉलेशन एवं रिपेयरिंग गैलरी",
+                descriptionEn: "We specialize in AC supplies, diagnostics, split & window unit setup, periodic washing, refilling, and high-quality parts replacement.",
+                descriptionHi: "हम नए एयर कंडीशनर की आपूर्ति, फिटिंग, डक्ट इंस्टॉलेशन, फिल्टर वाशिंग, गैस रिफिल एवं कुशल तकनीशियनों द्वारा संपूर्ण रिपेयरिंग कार्य प्रदान करते हैं।",
+                images: [
+                    "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&auto=format&fit=crop", // AC tools/wiring
+                    "https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?w=800&auto=format&fit=crop", // HVAC technician
+                    "https://images.unsplash.com/photo-1621574539437-4b7cb63120b8?w=800&auto=format&fit=crop", // Unit installation
+                    "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&auto=format&fit=crop", // Repair process
+                    "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&auto=format&fit=crop", // Control panel checking
+                    "https://images.unsplash.com/photo-1527689368864-3a821dbccc34?w=800&auto=format&fit=crop", // Cooling office space
+                    "https://images.unsplash.com/photo-1605647540924-852290f6b0d5?w=800&auto=format&fit=crop", // HVAC industrial unit
+                    "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&auto=format&fit=crop", // System logic board check
+                    "https://images.unsplash.com/photo-1613665813446-82a78c468a1d?w=800&auto=format&fit=crop"  // Living space split AC
+                ]
+            },
+            'general-order': {
+                tagEn: "General Supply Logistics", tagHi: "सामान्य ऑर्डर आपूर्ति एवं लॉजिस्टिक्स",
+                titleEn: "Bulk Sourcing & Seamless Delivery Solutions", titleHi: "निविदा-अनुकूल जनरल आर्डर की समयबद्ध डिलीवरी",
+                descriptionEn: "Dedicated general supplying services fulfilling government quotation notices, public enterprise tenders, and private warehouse logistics.",
+                descriptionHi: "विभिन्न सरकारी निविदाओं, परिषदों तथा निजी संस्थानों के समस्त जनरल ऑर्डर आपूर्ति हेतु व्यापक परिवहन एवं विश्वसनीय वितरण नेटवर्क।",
+                images: [
+                    "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1553413719-875871274712?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1580674684081-7617fbf3d745?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1493934558415-9d19f0b2b4d2?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&auto=format&fit=crop",
+                    "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop"
+                ]
+            }
+        };
+
+        // 4. Random Business Quotes Repository (No Next-Quote toggle, loaded randomly on load)
+        const businessQuotes = [
+            {
+                en: "“Providing quality products, fair prices, and time-bound reliable service to our valuable clients is our topmost priority.”",
+                hi: "“अपने बहुमूल्य ग्राहकों को गुणवत्तापूर्ण उत्पाद, उचित मूल्य दर एवं समयबद्ध विश्वसनीय सेवा प्रदान करना हमारी सर्वोच्च प्राथमिकता है।”"
+            },
+            {
+                en: "“Trust is built on quality supplies and fulfilled promises. Business India stands for absolute reliability in Varanasi.”",
+                hi: "“विश्वास हमेशा उत्तम आपूर्ति और निभाए गए वादों से बनता है। मंगलम ट्रेडर्स वाराणसी में पूर्ण विश्वसनीयता का प्रतीक है।”"
+            },
+            {
+                en: "“Excellence in service means delivering the right materials at the right time, with absolute transparency.”",
+                hi: "“सेवा में उत्कृष्टता का अर्थ है सही समय पर पूर्ण पारदर्शिता के साथ उत्तम सामग्री की आपूर्ति सुनिश्चित करना।”"
+            },
+            {
+                en: "“We don't just supply products; we build long-term relationships based on honesty and supreme quality.”",
+                hi: "“हम केवल सामान की आपूर्ति नहीं करते; हम वाराणसी में ईमानदारी और सर्वश्रेष्ठ गुणवत्ता के आधार पर दीर्घकालिक संबंध बनाते हैं।”"
+            },
+            {
+                en: "“Commitment to timely delivery is our signature. From institutional stationery to heavy AC installations.”",
+                hi: "“समय पर वितरण के प्रति हमारी प्रतिबद्धता ही हमारी पहचान है। स्टेशनरी आपूर्ति से लेकर भारी एसी इंस्टॉलेशन के काम तक।”"
+            }
+        ];
+
+        // Global arrays of images designated for this session (shuffled slice of 3)
+        let sessionSlideImages = [];
+        let currentActiveGallery = null;
+        let activeModalImages = [];
+        let currentActiveImageIndex = 0;
+        let activeSlideIndex = -1;
+
+        // On Page Load Initialization
+        window.addEventListener('DOMContentLoaded', () => {
+            const storedLang = localStorage.getItem('lang');
+            const storedTheme = localStorage.getItem('theme');
+            
+            if (storedLang) currentLang = storedLang;
+            if (storedTheme) currentTheme = storedTheme;
+            
+            // Apply language & theme
+            document.body.className = `lang-${currentLang} bg-slate-50 text-slate-800 dark:bg-gray-950 dark:text-gray-100 min-h-screen flex flex-col antialiased`;
+            applyTheme();
+
+            // Set up Top Slide show and Session-Rotation of images
+            buildHeroSlideshow();
+            startSlideshowTimer();
+
+            // Select and display random quote
+            displayRandomQuote();
+        });
+
+        // Helper function to extract 5 slides for this visit session
+        function buildHeroSlideshow() {
+            const container = document.getElementById('slideshow-container');
+            container.innerHTML = '';
+            
+            // Slice different blocks of 5 images based on visitSession index modulo
+            const offsetIdx = (visitSession % 3) * SLIDE_POOL_SIZE;
+            sessionSlideImages = masterSlideshowPool.slice(offsetIdx, offsetIdx + SLIDE_POOL_SIZE);
+
+            sessionSlideImages.forEach((slide, idx) => {
+                const slideDiv = document.createElement('div');
+                slideDiv.className = `absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out opacity-0 z-0`;
+                slideDiv.id = `hero-slide-${idx}`;
+                
+                slideDiv.innerHTML = `
+                    <img src="${slide.url}" alt="Slideshow Image" class="w-full h-full object-cover select-none">
+                    <!-- Gradient Overlay with persistent high-readability layout -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex items-end p-6 md:p-10">
+                        <div class="space-y-2 max-w-2xl transform translate-y-2 opacity-0 transition-all duration-700 delay-300" id="hero-text-container-${idx}">
+                            <span class="text-[10px] sm:text-xs font-bold uppercase tracking-widest bg-blue-600 text-white px-2.5 py-1 rounded-md">
+                                <span class="lang-en-el">Verified Supplier Work</span><span class="lang-hi-el">प्रमाणित आपूर्ति कार्य</span>
+                            </span>
+                            <h3 class="text-base sm:text-xl md:text-3xl font-extrabold text-white leading-snug drop-shadow-md">
+                                <span class="lang-en-el">${slide.en}</span>
+                                <span class="lang-hi-el">${slide.hi}</span>
+                            </h3>
+                            <p class="text-[11px] sm:text-xs text-yellow-400 font-semibold flex items-center gap-1">
+                                📍 Varanasi Districts Supply Logistics
+                            </p>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(slideDiv);
+            });
+
+            // Set a random starting slide from current visit pool
+            activeSlideIndex = Math.floor(Math.random() * sessionSlideImages.length);
+            showSlide(activeSlideIndex);
+        }
+
+        function showSlide(index) {
+            sessionSlideImages.forEach((_, idx) => {
+                const slide = document.getElementById(`hero-slide-${idx}`);
+                const text = document.getElementById(`hero-text-container-${idx}`);
+                if (slide) {
+                    slide.classList.remove('opacity-100', 'z-10');
+                    slide.classList.add('opacity-0', 'z-0');
+                }
+                if (text) {
+                    text.classList.remove('translate-y-0', 'opacity-100');
+                    text.classList.add('translate-y-2', 'opacity-0');
+                }
+            });
+
+            const currentSlide = document.getElementById(`hero-slide-${index}`);
+            const currentText = document.getElementById(`hero-text-container-${index}`);
+            if (currentSlide) {
+                currentSlide.classList.remove('opacity-0', 'z-0');
+                currentSlide.classList.add('opacity-100', 'z-10');
+            }
+            if (currentText) {
+                setTimeout(() => {
+                    currentText.classList.remove('translate-y-2', 'opacity-0');
+                    currentText.classList.add('translate-y-0', 'opacity-100');
+                }, 200);
+            }
+        }
+
+        // Optimum time interval set to 5000ms (5 seconds) as requested for reading ease
+        function startSlideshowTimer() {
+            setInterval(() => {
+                let nextIdx;
+                do {
+                    nextIdx = Math.floor(Math.random() * sessionSlideImages.length);
+                } while (nextIdx === activeSlideIndex && sessionSlideImages.length > 1);
+
+                activeSlideIndex = nextIdx;
+                showSlide(activeSlideIndex);
+            }, 5000);
+        }
+
+        // Random Quote displayer (triggers once on visit load)
+        function displayRandomQuote() {
+            const quoteDisplay = document.getElementById('business-quote-display');
+            const randomIdx = Math.floor(Math.random() * businessQuotes.length);
+            const activeQuote = businessQuotes[randomIdx];
+
+            quoteDisplay.innerHTML = `
+                <span class="lang-en-el">${activeQuote.en}</span>
+                <span class="lang-hi-el">${activeQuote.hi}</span>
+            `;
+        }
+
+        // Navigation & Pulsating highlight mapper linked to image_25d21a.png
+        function navigateToServiceAndShow(serviceId) {
+            const targetSection = document.getElementById('services');
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            }
+
+            const targetCard = document.getElementById(`service-card-${serviceId}`);
+            if (targetCard) {
+                targetCard.classList.remove('highlight-card');
+                void targetCard.offsetWidth; // Trigger reflow to reboot css animation
+                targetCard.classList.add('highlight-card');
+                
+                // Open modal popup automatically after smooth scrolling finishes
+                setTimeout(() => {
+                    openPortfolioModal(serviceId);
+                }, 1200);
+            }
+        }
+
+        // Interactive modal builder with visit-based distinct images selection
+        function openPortfolioModal(categoryKey) {
+            currentActiveGallery = masterServiceGalleries[categoryKey];
+            if (!currentActiveGallery) return;
+
+            // Extract a persistent set of 3 images from pool based on modulo visitSession
+            const offsetIdx = (visitSession % 3) * GALLERY_POOL_SIZE;
+            activeModalImages = currentActiveGallery.images.slice(offsetIdx, offsetIdx + GALLERY_POOL_SIZE);
+            currentActiveImageIndex = 0;
+
+            const modal = document.getElementById('portfolio-modal');
+            const thumbnailsContainer = document.getElementById('modal-thumbnails');
+
+            // Inject captions & details dynamically
+            document.getElementById('modal-category-tag').innerHTML = `
+                <span class="lang-en-el">${currentActiveGallery.tagEn}</span>
+                <span class="lang-hi-el">${currentActiveGallery.tagHi}</span>
+            `;
+            document.getElementById('modal-title').innerHTML = `
+                <span class="lang-en-el">${currentActiveGallery.titleEn}</span>
+                <span class="lang-hi-el">${currentActiveGallery.titleHi}</span>
+            `;
+            document.getElementById('modal-desc').innerHTML = `
+                <span class="lang-en-el">${currentActiveGallery.descriptionEn}</span>
+                <span class="lang-hi-el">${currentActiveGallery.descriptionHi}</span>
+            `;
+
+            // Draw thumbnails dynamically
+            thumbnailsContainer.innerHTML = '';
+            activeModalImages.forEach((imgUrl, idx) => {
+                const thumbBtn = document.createElement('button');
+                thumbBtn.className = `w-20 h-16 rounded-xl overflow-hidden border-2 transition-all ${idx === 0 ? 'border-blue-600 scale-95' : 'border-transparent opacity-70 hover:opacity-100'}`;
+                thumbBtn.id = `modal-thumb-${idx}`;
+                thumbBtn.onclick = () => setModalMainImage(idx);
+                
+                thumbBtn.innerHTML = `<img src="${imgUrl}" class="w-full h-full object-cover">`;
+                thumbnailsContainer.appendChild(thumbBtn);
+            });
+
+            // Set current viewer to main 
+            setModalMainImage(0);
+
+            // Trigger modal visibility
+            modal.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+        }
+
+        function setModalMainImage(index) {
+            if (activeModalImages.length === 0) return;
+            currentActiveImageIndex = index;
+            const mainImg = document.getElementById('modal-main-image');
+            
+            mainImg.style.opacity = 0.3;
+            setTimeout(() => {
+                mainImg.src = activeModalImages[index];
+                mainImg.style.opacity = 1;
+            }, 100);
+
+            activeModalImages.forEach((_, idx) => {
+                const thumb = document.getElementById(`modal-thumb-${idx}`);
+                if (thumb) {
+                    if (idx === index) {
+                        thumb.classList.add('border-blue-600', 'scale-95');
+                        thumb.classList.remove('border-transparent', 'opacity-70');
+                    } else {
+                        thumb.classList.remove('border-blue-600', 'scale-95');
+                        thumb.classList.add('border-transparent', 'opacity-70');
+                    }
+                }
+            });
+        }
+
+        function nextModalImage() {
+            if (activeModalImages.length === 0) return;
+            let nextIndex = (currentActiveImageIndex + 1) % activeModalImages.length;
+            setModalMainImage(nextIndex);
+        }
+
+        function prevModalImage() {
+            if (activeModalImages.length === 0) return;
+            let prevIndex = (currentActiveImageIndex - 1 + activeModalImages.length) % activeModalImages.length;
+            setModalMainImage(prevIndex);
+        }
+
+        function closePortfolioModal() {
+            const modal = document.getElementById('portfolio-modal');
+            modal.classList.add('hidden');
+            document.body.classList.remove('overflow-hidden');
+        }
+
+        // Standard Dark & Light mode toggler
+        function toggleTheme() {
+            currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+            localStorage.setItem('theme', currentTheme);
+            applyTheme();
+        }
+
+        function applyTheme() {
+            const htmlElement = document.documentElement;
+            const sunIcon = document.getElementById('theme-sun');
+            const moonIcon = document.getElementById('theme-moon');
+
+            if (currentTheme === 'dark') {
+                htmlElement.classList.add('dark');
+                sunIcon.classList.remove('hidden');
+                moonIcon.classList.add('hidden');
+            } else {
+                htmlElement.classList.remove('dark');
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+            }
+        }
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'en' ? 'hi' : 'en';
+            localStorage.setItem('lang', currentLang);
+            document.body.classList.remove('lang-en', 'lang-hi');
+            document.body.classList.add(`lang-${currentLang}`);
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        }
+
+        // Quote list builder logical handlers
+        let quoteItems = [];
+
+        function addItemToQuote() {
+            const categorySelect = document.getElementById('builder-category');
+            const itemInput = document.getElementById('builder-item');
+            const qtyInput = document.getElementById('builder-qty');
+
+            const category = categorySelect.options[categorySelect.selectedIndex].text;
+            const itemDescription = itemInput.value.trim();
+            const quantity = qtyInput.value.trim();
+
+            if (!itemDescription) {
+                itemInput.classList.add('border-red-500', 'ring-2', 'ring-red-500/20');
+                setTimeout(() => {
+                    itemInput.classList.remove('border-red-500', 'ring-2', 'ring-red-500/20');
+                }, 3000);
+                return;
+            }
+
+            quoteItems.push({
+                category,
+                description: itemDescription,
+                quantity: quantity || '1'
+            });
+
+            itemInput.value = '';
+            qtyInput.value = '';
+
+            renderQuoteList();
+        }
+
+        function removeItemFromQuote(index) {
+            quoteItems.splice(index, 1);
+            renderQuoteList();
+        }
+
+        function clearQuote() {
+            quoteItems = [];
+            renderQuoteList();
+        }
+
+        function renderQuoteList() {
+            const wrapper = document.getElementById('quote-items-wrapper');
+            const noItemsText = document.getElementById('no-items-text');
+
+            if (quoteItems.length === 0) {
+                noItemsText.classList.remove('hidden');
+                wrapper.innerHTML = '';
+                wrapper.appendChild(noItemsText);
+                return;
+            }
+
+            noItemsText.classList.add('hidden');
+            wrapper.innerHTML = '';
+
+            quoteItems.forEach((item, index) => {
+                const itemDiv = document.createElement('div');
+                itemDiv.className = "flex items-center justify-between p-3 rounded-xl bg-slate-100/70 dark:bg-gray-800/70 border border-slate-200/50 dark:border-gray-700/50 text-sm";
+                
+                itemDiv.innerHTML = `
+                    <div class="flex-1">
+                        <span class="inline-block px-2 py-0.5 text-[10px] font-extrabold uppercase rounded bg-indigo-50 dark:bg-indigo-900/40 text-indigo-600 dark:text-indigo-400 mr-2">${item.category}</span>
+                        <span class="font-semibold text-slate-800 dark:text-gray-100">${item.description}</span>
+                        <span class="text-xs text-slate-500 dark:text-gray-400 ml-2">(Qty: ${item.quantity})</span>
+                    </div>
+                    <button onclick="removeItemFromQuote(${index})" class="text-slate-400 hover:text-red-500 p-1 transition" title="Remove item">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                        </svg>
+                    </button>
+                `;
+                wrapper.appendChild(itemDiv);
+            });
+        }
+
+        function submitQuote() {
+            if (quoteItems.length === 0) {
+                const itemInput = document.getElementById('builder-item');
+                itemInput.focus();
+                itemInput.classList.add('border-red-500');
+                setTimeout(() => itemInput.classList.remove('border-red-500'), 3000);
+                return;
+            }
+
+            let textMessage = `Hello Business India, I would like to inquire about the following items:\n\n`;
+            quoteItems.forEach((item, index) => {
+                textMessage += `${index + 1}. [${item.category}] ${item.description} - Qty: ${item.quantity}\n`;
+            });
+            textMessage += `\nPlease reply with pricing and delivery timeline estimates. Thanks!`;
+
+            const encodedText = encodeURIComponent(textMessage);
+            const whatsappUrl = `https://wa.me/919415448909?text=${encodedText}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        function handleContactFormSubmit(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('contact-name').value.trim();
+            const phone = document.getElementById('contact-phone').value.trim();
+            const email = document.getElementById('contact-email').value.trim();
+            const msg = document.getElementById('contact-msg').value.trim();
+
+            let composeMsg = `Hello Business India,\n\n`;
+            composeMsg += `Name: ${name}\n`;
+            composeMsg += `Phone: ${phone}\n`;
+            if (email) composeMsg += `Email: ${email}\n`;
+            composeMsg += `Inquiry: ${msg}\n`;
+
+            const encodedCompose = encodeURIComponent(composeMsg);
+            const whatsappSubmitUrl = `https://wa.me/919415448909?text=${encodedCompose}`;
+
+            const successBox = document.getElementById('contact-success-notification');
+            successBox.classList.remove('hidden');
+
+            setTimeout(() => {
+                successBox.classList.add('hidden');
+                document.getElementById('quick-contact-form').reset();
+                window.open(whatsappSubmitUrl, '_blank');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
